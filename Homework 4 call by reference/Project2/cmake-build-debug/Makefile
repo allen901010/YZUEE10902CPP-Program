@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project1"
+CMAKE_SOURCE_DIR = "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project1/cmake-build-debug/CMakeFiles" "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project1/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug/CMakeFiles" "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project1/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -131,44 +131,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Project1
+# Target rules for targets named Project2
 
 # Build rule for target.
-Project1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Project1
-.PHONY : Project1
+Project2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Project2
+.PHONY : Project2
 
 # fast build rule for target.
-Project1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/build
-.PHONY : Project1/fast
+Project2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/build
+.PHONY : Project2/fast
 
-1.o: 1.cpp.o
+main.o: main.cpp.o
 
-.PHONY : 1.o
+.PHONY : main.o
 
 # target to build an object file
-1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/1.cpp.o
-.PHONY : 1.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-1.i: 1.cpp.i
+main.i: main.cpp.i
 
-.PHONY : 1.i
+.PHONY : main.i
 
 # target to preprocess a source file
-1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/1.cpp.i
-.PHONY : 1.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-1.s: 1.cpp.s
+main.s: main.cpp.s
 
-.PHONY : 1.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/1.cpp.s
-.PHONY : 1.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -178,10 +178,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Project1"
-	@echo "... 1.o"
-	@echo "... 1.i"
-	@echo "... 1.s"
+	@echo "... Project2"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

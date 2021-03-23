@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project1/1.cpp" "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project1/cmake-build-debug/CMakeFiles/Project1.dir/1.cpp.o"
+  "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/main.cpp" "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug/CMakeFiles/Project2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
