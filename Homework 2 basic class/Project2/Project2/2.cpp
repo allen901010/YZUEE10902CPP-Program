@@ -1,0 +1,33 @@
+/*
+Date:2021/03/14
+Name:§õ©§­Û
+Student ID:1090604
+*/
+
+#include<cstdlib>
+#include<iostream>
+#include<string>
+using namespace std;
+
+class CTemp
+{
+public:
+
+	double C;
+	double F;
+	float CtoF(double c)
+	{
+		return F = (C * 9 / 5) + 32;
+	}
+};
+
+int main(void)
+{
+	CTemp temp1;
+	cout << "Enter your temperature : ";
+	cin >> temp1.C;
+	cout << "C to F is " << temp1.CtoF(temp1.C) << endl;
+
+	system("pause");
+	return 0;
+}
