@@ -1,0 +1,3 @@
+/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project5/cmake-build-debug/CMakeFiles/Project5.dir

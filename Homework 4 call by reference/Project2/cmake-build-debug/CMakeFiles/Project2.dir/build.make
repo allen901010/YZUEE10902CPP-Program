@@ -77,27 +77,27 @@ include CMakeFiles/Project2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Project2.dir/flags.make
 
-CMakeFiles/Project2.dir/main.cpp.o: CMakeFiles/Project2.dir/flags.make
-CMakeFiles/Project2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project2.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project2.dir/main.cpp.o -c "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/main.cpp"
+CMakeFiles/Project2.dir/2.cpp.o: CMakeFiles/Project2.dir/flags.make
+CMakeFiles/Project2.dir/2.cpp.o: ../2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project2.dir/2.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project2.dir/2.cpp.o -c "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/2.cpp"
 
-CMakeFiles/Project2.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project2.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/main.cpp" > CMakeFiles/Project2.dir/main.cpp.i
+CMakeFiles/Project2.dir/2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project2.dir/2.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/2.cpp" > CMakeFiles/Project2.dir/2.cpp.i
 
-CMakeFiles/Project2.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project2.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/main.cpp" -o CMakeFiles/Project2.dir/main.cpp.s
+CMakeFiles/Project2.dir/2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project2.dir/2.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/2.cpp" -o CMakeFiles/Project2.dir/2.cpp.s
 
 # Object files for target Project2
 Project2_OBJECTS = \
-"CMakeFiles/Project2.dir/main.cpp.o"
+"CMakeFiles/Project2.dir/2.cpp.o"
 
 # External object files for target Project2
 Project2_EXTERNAL_OBJECTS =
 
-Project2: CMakeFiles/Project2.dir/main.cpp.o
+Project2: CMakeFiles/Project2.dir/2.cpp.o
 Project2: CMakeFiles/Project2.dir/build.make
 Project2: CMakeFiles/Project2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/allenduma/Desktop/程式語言作業二/Homework 4 call by reference/Project2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Project2"

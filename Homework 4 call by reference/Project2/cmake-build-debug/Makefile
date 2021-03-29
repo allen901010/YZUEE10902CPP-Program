@@ -143,32 +143,32 @@ Project2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/build
 .PHONY : Project2/fast
 
-main.o: main.cpp.o
+2.o: 2.cpp.o
 
-.PHONY : main.o
+.PHONY : 2.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/main.cpp.o
-.PHONY : main.cpp.o
+2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/2.cpp.o
+.PHONY : 2.cpp.o
 
-main.i: main.cpp.i
+2.i: 2.cpp.i
 
-.PHONY : main.i
+.PHONY : 2.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/main.cpp.i
-.PHONY : main.cpp.i
+2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/2.cpp.i
+.PHONY : 2.cpp.i
 
-main.s: main.cpp.s
+2.s: 2.cpp.s
 
-.PHONY : main.s
+.PHONY : 2.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/main.cpp.s
-.PHONY : main.cpp.s
+2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project2.dir/build.make CMakeFiles/Project2.dir/2.cpp.s
+.PHONY : 2.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Project2"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... 2.o"
+	@echo "... 2.i"
+	@echo "... 2.s"
 .PHONY : help
 
 
