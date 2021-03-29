@@ -1,67 +1,150 @@
 /*
-Date:2021/03/15
+Date:2021/03/29
 Name:李岱倫
 Student ID:1090604
 */
 
-#include<cstdlib>
-#include<iostream>
-
+#include <iostream>
+#include <cstdlib>
+#include<time.h>
+#define BALLNUMBER 20
 using namespace std;
-#define BALLNUMBER 20;
 
-int gen(int max);
-
-class GlassBall {
+class GlassBall
+{
 private:
+    int ballnumber;
 public:
-    int a=BALLNUMBER;
+    bool conti;
+
+    GlassBall(int n=BALLNUMBER,bool t=true)
+    {
+        ballnumber=n;
+        conti=t;
+    }
     void reset(int n);
-    void computer_take(void);
-    void human_take(void);
-
+    void computer_take();
+    void human_take();
 };
-
-void GlassBall::reset(int n) {
-
+void GlassBall::reset(int n)
+{
+    ballnumber=n;
 }
+void GlassBall::computer_take()
+{
+    int k;
+    if(ballnumber==0)
+        goto end;
+    if(ballnumber>3)
+    {
+        k=1+rand()%3;
+        cout<<"Computer takes "<<k<<" balls"<<endl;
+        ballnumber-=k;
+        goto fuck;
+    }
 
-void GlassBall::computer_take(void) {
-    if(this->a==1){
+    if(ballnumber==3){
+        k=1+rand()%2;
+        cout<<"Computer takes "<<k<<" balls"<<endl;
+        ballnumber-=k;
+        goto fuck;
+    }
+
+    if(ballnumber==1||ballnumber==2) {
+        cout<<"Computer takes 1 balls"<<endl;
+        ballnumber--;
+        goto fuck;
+    }
+    fuck:
+    cout<<"remaining balls="<<ballnumber<<endl;
+    if(ballnumber==0)
+    {
+        conti=false;
         cout<<"You Win!"<<endl;
-        return;
     }
-    int i=gen(3);
-    cout<<"Computer Take : "<<i<<"balls"<<endl;
-    this->a=this->a-i;
-    cout<<"Remaining Balls = "<<this->a<<endl;
+    end:;
 }
-
-void GlassBall::human_take(void) {
-    if(this->a==1){
-        cout<<"You Lose!"<<endl;
-        return;
-    }
-    int i,j=this->a;
-    cout<<"Input the Balls(1-3) : ";
+void GlassBall::human_take()
+{
+    int i;
+    if(ballnumber==0)
+        goto end;
+    cout<<"Input the balls(1-3):";
+    input:
     cin>>i;
-    this->a=j-i;
-    cout<<"Remaining Balls = "<<this->a<<endl;
+    if(i<1||i>3)
+    {
+        cout<<"Error!"<<endl;
+        goto input;
+    }
+    ballnumber-=i;
+    cout<<"remaining balls="<<ballnumber<<endl;
+    if(ballnumber==0)
+    {
+        conti=false;
+        cout<<"You Loss!"<<endl;
+    }
+    end:;
 }
 
-int main(int) {
-    GlassBall g;
-    cout<<"Total balls = "<<BALLNUMBER;
-    cout<<endl;
-    while(g.a>1){
-        g.human_take();
-        g.computer_take();
+int main()
+{
+    int n,m,coin=rand()%2;
+    srand(time(NULL));
+    start:
+    GlassBall ball1;
+    ball1.reset(BALLNUMBER);
+    cout<<"Key in 0 or 1 to decide who is first(Is random)"<<endl;
+    cin>>n;
+    if(n>1||n<0)
+    {
+        cout<<"Error!"<<endl;
+        goto start;
+    }
+    if(n==coin)
+    {
+        cout<<"You go first\ntotal balls="<<BALLNUMBER<<endl;
+        while(ball1.conti==true)
+        {
+            ball1.human_take();
+            ball1.computer_take();
+        }
+        again1:
+        cout<<"0.End\n1.Play again"<<endl;
+        cin>>m;
+        if(m>1||m<0)
+        {
+            cout<<"Error!"<<endl;
+            goto again1;
+        }
+        if(m==1)
+        {
+            ball1.reset(BALLNUMBER);
+            goto start;
+        }
+    }
+    if(n!=coin)
+    {
+        cout<<"Computer go first\ntotal balls="<<BALLNUMBER<<endl;
+        while(ball1.conti==true)
+        {
+            ball1.computer_take();
+            ball1.human_take();
+        }
+        again2:
+        cout<<"0.End\n1.Play again?"<<endl;
+        cin>>m;
+        if(m>1||m<0)
+        {
+            cout<<"Error!"<<endl;
+            goto again2;
+        }
+        if(m==1)
+        {
+            ball1.reset(BALLNUMBER);
+            goto start;
+        }
     }
 
     system("pause");
-    return 0;
 }
-
-int gen(int max) {
-    return 1 + rand() % max;
-};
