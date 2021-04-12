@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
-project(Project2)
+project(Project1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Project2 2.cpp)
+add_executable(Project1 1.cpp)
