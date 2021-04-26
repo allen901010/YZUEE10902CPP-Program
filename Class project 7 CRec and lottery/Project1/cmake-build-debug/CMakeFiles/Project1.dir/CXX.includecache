@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/allenduma/Desktop/程式語言作業二/Class project 7 CRec and lottery/Project1/1.cpp
+iostream
+-
+cstdlib
+-
+
