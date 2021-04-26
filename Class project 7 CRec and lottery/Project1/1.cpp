@@ -43,14 +43,14 @@ CRec::CRec(char i, int w, int h) {
     cout << id << ": 呼叫3個參數的constructor" << endl;
 }
 
-
 int CRec::area() {
     int x = width * height;
     return x;
 }
 
 void CRec::show() {
-    cout << "id=" << id << ", width=" << width << ", height=" << height << ", area=" << area() << endl;
+    cout << "id=" << id << ", width=" << width << ", height="
+    << height << ", area=" << area() << endl;
 }
 
 CRec CRec::bigger_area(CRec rec) {
@@ -75,7 +75,7 @@ int main(void) {
     CRec win3('C', 80, 10);
     CRec win4;
     cout << "Bigger area: ";
-    (win1.bigger_area(win2)).show();
+    win1.bigger_area(win2).show();
     cout << "Biggest area: ";
     (win2.biggest_area(win1, win3))->show();
 
