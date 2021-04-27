@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/allenduma/Desktop/程式語言作業二/Homework 1 practice C program/Project6/main.cpp
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+
